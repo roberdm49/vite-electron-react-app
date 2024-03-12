@@ -1,11 +1,8 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/electron-vite.animate.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
@@ -16,14 +13,31 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Crear cuenta</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <label className="card-label">
+          <span>Nombre de la companía</span>
+          <input placeholder='Rocio LLC' />
+        </label>
+
+        <label className="card-label">
+          <span>Nombre de usuario</span>
+          <input placeholder='rociotoftum' />
+        </label>
+
+        <label className="card-label">
+          <span>Primer nombre</span>
+          <input placeholder='Rocio' />
+        </label>
+
+        <label className="card-label">
+          <span>Apellido</span>
+          <input placeholder='Toftum' />
+        </label>
+
+        <button className="card-button">
+          Registrarse
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

@@ -34,7 +34,31 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 1rem;
+}
+
+.card-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.card-label > span {
+  text-align: left;
+}
+
+.card-label > input {
+  padding: 8px 4px;
+}
+
+.card-label > input::placeholder {
+  font-style: italic;
+}
+
+.card-button {
+  margin-top: 16px;
+  width: 100%;
 }
 
 .read-the-docs {
