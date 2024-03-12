@@ -4,10 +4,12 @@ import './App.css'
 
 function App() {
 
-  const handleSubmit = async (event: React.FormEvent) => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
-    console.log('Submit!')
+    console.log('handleSubmit')
   }
+
+  console.log('123')
 
   return (
     <>
