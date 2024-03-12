@@ -3,6 +3,12 @@ import viteLogo from '/electron-vite.animate.svg'
 import './App.css'
 
 function App() {
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault()
+    console.log('Submit!')
+  }
+
   return (
     <>
       <div>
@@ -14,7 +20,7 @@ function App() {
         </a>
       </div>
       <h1>Crear cuenta</h1>
-      <div className="card">
+      <form className="card" onSubmit={handleSubmit}>
         <label className="card-label">
           <span>Nombre de la companía</span>
           <input placeholder='Rocio LLC' />
@@ -38,7 +44,7 @@ function App() {
         <button className="card-button">
           Registrarse
         </button>
-      </div>
+      </form>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
